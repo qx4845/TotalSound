@@ -1,0 +1,78 @@
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>RTSM_v19</title>
+
+<style>
+	body {background-color:#e0e0e0; text-align:center;}	/* gray background, center everything */
+	p {margin-left:auto; margin-right:auto; width:550px;}	/* keep paragraphs narrow and centered */
+	input {font-size:large;}				/* makes buttons bigger */
+</style>
+<style type="text/css">
+/*
+#a {
+    text-align: center;
+}
+#i1 {
+    margin-left: 0px;
+}
+*/
+/*
+div#FrequencyAnalyzer{ width:256px; height:256px; background:#000; padding:0px; margin:0px auto; }
+div#FrequencyAnalyzer > div > audio{  width:256px; background:#000; float:right;  }
+div#FrequencyAnalyzer > canvas{ width:256px; height:256px; background:#002D3C; float:right; }
+*/
+</style>
+
+<script src="fft.js"></script>
+<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+<script src="totalSound.js"></script>
+
+<style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+<body onload="visualize()">
+<center>
+<header>
+<p>
+<br>
+<a href="https://sites.google.com/site/realtimesheetmusic/home"><b><font size="4">Total Sound Videography Demo App v19</font></b></a>
+<br>
+for <a href="https://arxiv.org/abs/1907.09936">elements described in</a> U.S. Patent <a href="http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=10,341,795.PN.&OS=PN/10,341,795&RS=PN/10,341,795">10,341,795</a>
+<br><br>
+by S. Wedekind &amp; P. Fraundorf
+<br>
+Dept. of Physics & Astronomy; Ctr. for NanoSci. Bldg.<br>
+University of Missouri - St. Louis<br>
+</p>
+Let page use your microphone to activate the display.
+<br>
+</header>
+</center>
+<br>
+<img src="ClefScaleRed.png"><canvas id="theCanvas" width="256" height="256"></canvas><img src="octaveScale.gif">
+<div id="audio_box"></div>
+<br>
+<center>The vertical scale is log-frequency,<br>so octaves &amp; half-notes are equally spaced.<br>
+<br>
+<input type="button" name="capture" id="capture" value="Capture" onclick="capture()">
+<input type="button" name="pause" id="pause" value="Pause" onclick="pause()">
+<input type="button" name="resume" id="resume" value="Resume" onclick="resume()">
+<br><br>
+Volume control:<br>
+<input type="button" name="volDown" id="volDown" value="-" onclick="volDown()">
+<input type="button" name="volUp" id="volUp" value="+" onclick="volUp()"><br>
+<input type="button" name="volReset" id="volReset" value="Reset volume" onclick="volReset()">
+</center>
+
+</body></html>
