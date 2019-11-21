@@ -13,6 +13,7 @@ wedekind.stephen@gmail.com
 
 
 Patent Links:
+
 Paper: 
 https://arxiv.org/abs/1907.09936
 
