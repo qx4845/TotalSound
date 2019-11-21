@@ -4,7 +4,7 @@ Currently only the publicly available HTML file is available from the original s
 
 https://www.umsl.edu/~fraundorfp/nanowrld/jsfft/RTSM_v19c.html
 
-The base JavaScript code is still under development, but a Demonstration can be viewed at the above link. 
+The base JavaScript code is still under development, but a Demo can be viewed at the above link. 
 
 Companies interested in licensing the "complex-color" Total Sound Visualization method (U.S. Patent 10,341,795) should contact:
 
