@@ -1,4 +1,4 @@
-# totalSound
+# TotalSound
 
 Currently only the publicly available HTML file is available from the original source: 
 
